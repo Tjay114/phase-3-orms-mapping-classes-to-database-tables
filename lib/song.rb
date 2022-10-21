@@ -1,3 +1,4 @@
+#require 'pry'
 class Song
 
   attr_accessor :name, :album
@@ -41,5 +42,8 @@ end
     song = Song.new(name: name, album: album)
     song.save
   end
-
 end
+
+gold_digger = Song.new(name: "Gold Digger", album: "25")
+
+#binding.pry
